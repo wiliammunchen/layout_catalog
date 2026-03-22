@@ -8,7 +8,7 @@
   background-image: linear-gradient(
     to bottom,
     $color-background 0,
-    $color-white 6px
+    $color-white $catalog-background-stop
   );
 
   @include on-min-width(488px) {

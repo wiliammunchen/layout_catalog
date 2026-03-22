@@ -4,7 +4,7 @@
   flex-direction: column;
   box-sizing: border-box;
   width: $card-width;
-  padding: 32px 16px 16px;
+  padding: $card-padding-top $card-padding-x $card-padding-bottom;
   border: 1px solid $color-card-border;
   border-radius: $card-border-radius;
   background-color: $color-white;
@@ -20,7 +20,7 @@
   &__photo {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: $card-photo-margin-bottom;
     text-decoration: none;
     cursor: pointer;
   }
@@ -32,10 +32,10 @@
   }
 
   &__title {
-    margin: 0 0 4px;
+    margin: 0 0 $card-title-margin-bottom;
     font-size: $font-size-sm;
-    font-weight: 500;
-    line-height: 18px;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-md;
     color: $color-title;
     transition: color $transition-duration;
   }
@@ -45,9 +45,9 @@
   }
 
   &__code {
-    margin: 0 0 16px;
+    margin: 0 0 $card-code-margin-bottom;
     font-size: $font-size-xs;
-    line-height: 14px;
+    line-height: $line-height-xs;
     color: $color-text-secondary;
   }
 
@@ -55,13 +55,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: $card-rating-margin-bottom;
   }
 
   &__reviews {
     margin: 0;
     font-size: $font-size-xs;
-    line-height: 14px;
+    line-height: $line-height-xs;
     color: $color-title;
   }
 
@@ -69,21 +69,21 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: $card-price-margin-bottom;
   }
 
   &__price-label {
     margin: 0;
     font-size: $font-size-sm;
-    line-height: 18px;
+    line-height: $line-height-md;
     color: $color-text-secondary;
   }
 
   &__price-value {
     margin: 0;
     font-size: $font-size-lg;
-    font-weight: 700;
-    line-height: 18px;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-md;
     color: $color-title;
   }
 
@@ -98,8 +98,8 @@
     border-radius: $card-border-radius;
     background-color: $color-primary;
     font-size: $font-size-md;
-    font-weight: 700;
-    line-height: 16px;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-sm;
     color: $color-white;
     text-decoration: none;
     text-transform: uppercase;
