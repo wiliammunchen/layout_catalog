@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     height: $header-height;
-    font-size: 12px;
+    font-size: $font-size-sm;
     font-weight: 500;
     line-height: 1;
     color: $color-title;
@@ -32,8 +32,8 @@
       right: 0;
       bottom: 0;
       left: 0;
-      height: 4px;
-      border-radius: 8px;
+      height: $nav-underline-height;
+      border-radius: $nav-underline-radius;
       background-color: $color-primary;
       transform: scaleX(0);
       transform-origin: center;
