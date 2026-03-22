@@ -1,0 +1,21 @@
+.catalog {
+  display: grid;
+  grid-template-columns: $card-width;
+  gap: $catalog-row-gap $catalog-column-gap;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: $catalog-padding-y $catalog-padding-x;
+  background-image: linear-gradient(to bottom, #f6f6f6 0, $color-white 6px);
+
+  @include on-min-width(488px) {
+    grid-template-columns: repeat(2, $card-width);
+  }
+
+  @include on-min-width(768px) {
+    grid-template-columns: repeat(3, $card-width);
+  }
+
+  @include on-min-width(1024px) {
+    grid-template-columns: repeat(4, $card-width);
+  }
+}

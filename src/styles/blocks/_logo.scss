@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  &__image {
+    display: block;
+    width: $logo-size;
+    height: $logo-size;
+  }
+}
